@@ -81,3 +81,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 2. array_insert_shift is [here](docs/array_insert_shift/README.md)
 3. array_binary_search is [here](docs/array_binary_search.md/README.md)
 4. linked_list is [here](docs/linked_list/README.md)
+5. linked_list_kth is [here](docs/linked_list_kth/README.md)
