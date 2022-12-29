@@ -10,4 +10,8 @@ Approach:
 
 Traverse through the linked list to find the length. Traverse through the nodes in the list again, length - 'k' times. Return the value of the node that is 'k' nodes back from the end of the list.
 
+Link to code:
+
+[here](../../data_structures/linked_list.py)
+
 click [here](../../README.md) to return home
