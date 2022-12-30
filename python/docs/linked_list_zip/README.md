@@ -21,3 +21,9 @@ If there is a LL2 value
  add it to the new list
  move the pointer to the next. current_node = current_node.next
 Return results_list
+
+## Code link
+
+[my code](../../code_challenges/linked_list_zip.py)
+
+click [here](../../README.md) to return home
