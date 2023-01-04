@@ -85,3 +85,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 6. linked_list_zip is [here](docs/linked_list_zip/README.md)
 7. stack_and_queue is [here](docs/stack_and_queue/README.md)
 8. stack_queue_pseudo is [here](docs/stack_queue_pseudo/README.md)
+9. stack_queue_animal_shelter is [here](docs/stack_queue_animal_shelter/README.md)
