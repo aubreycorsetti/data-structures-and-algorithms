@@ -27,8 +27,7 @@ def test_post_order(tree):
     expected = ["d", "e", "b", "f", "g", "c", "a"]
     assert actual == expected
 
-
-# @pytest.fixture
+@pytest.fixture
 def tree():
     """
           a

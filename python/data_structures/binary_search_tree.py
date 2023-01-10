@@ -6,6 +6,12 @@ class BinarySearchTree(BinaryTree):
     Put docstring here
     """
 
+
+    def add(self, value):
+        #check for empty BST
+        pass
+
+
     def __init__(self):
         # initialization here
         pass

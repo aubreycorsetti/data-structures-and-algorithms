@@ -1,10 +1,12 @@
-class BinaryTree:
-    """
-    Put docstring here
-    """
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
 
+
+class BinaryTree:
     def __init__(self):
-        # initialization here
         self.root = None
 
     def post_order(self, root=None, nodes=None):
@@ -24,66 +26,65 @@ class BinaryTree:
             self.post_order(root.left, nodes)
 
         # Right child
-        if root.left:
+        if root.right:
             self.post_order(root.right, nodes)
 
         # Root
-        if nodes.append(root.value):
+        nodes.append(root.value)
+
+        # Print
+        print(nodes)
 
         return nodes
 
     def pre_order(self, root=None, nodes=None):
         """
-        Return a list of nodes in a BT, in pre order
-        eg: [1, 2, 4, 5, 3, 6, 7]
+        Return a list of nodes in a BT, in pre-order
+        eg: ["a", "b", "d", "e", "c", "f", "g"]
         """
-        if nodes is None:
-            nodes = []
-
         if root is None:
             root = self.root
+
+        if nodes is None:
+            nodes = []
 
         # Root
         nodes.append(root.value)
 
         # Left child
         if root.left:
-            self.pre_order(root.eft, nodes)
+            self.pre_order(root.left, nodes)
 
         # Right child
         if root.right:
             self.pre_order(root.right, nodes)
+
+        print(nodes)
 
         return nodes
 
     def in_order(self, root=None, nodes=None):
         """
         Return a list of nodes in a BT, in order
-        eg: [4, 2, 5, 1, 6, 3, 7]
+        eg: ["d", "b", "e", "a", "f", "c", "g"]
         """
-        if nodes is None:
-            nodes = []
-
         if root is None:
             root = self.root
+
+        if nodes is None:
+            nodes = []
 
         # Left child
         if root.left:
             self.in_order(root.left, nodes)
 
+        # Root
+        nodes.append(root.value)
+
         # Right child
         if root.right:
             self.in_order(root.right, nodes)
 
-        #root
-        nodes.append(root.value)
+        print(nodes)
 
         return nodes
-
-
-
-class Node:
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
