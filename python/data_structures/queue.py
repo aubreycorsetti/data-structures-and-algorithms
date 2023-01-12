@@ -19,19 +19,21 @@ class Queue:
         self.rear = None
 
     def enqueue(self, value):
-        # check to see if queue is not empty
+        # check to see if queue is empty!
         if self.rear:
-            # change 'next' for old rear from None to the new Node
             self.rear.next = Node(value)
-            # set the rear to be the new Node
             self.rear = self.rear.next
             return
-        # if it's empty, front & rear are both equal to the new Node
         self.rear = self.front = Node(value)
 
     def dequeue(self):
-        if self.front is None:
-            raise InvalidOperationError("Method not allowed on empty collection")
+        # consider a queue with only 1 node
+        # TODO: refactor class to include a .length
+        if self.front == self.rear:
+            dequeued = self.front
+            self.front = self.rear = None
+            return dequeued.value
+
         dequeued = self.front
         self.front = self.front.next
         return dequeued.value
