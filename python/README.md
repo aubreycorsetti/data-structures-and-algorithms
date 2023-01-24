@@ -89,4 +89,5 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 10. stack_queue_animal_brackets is [here](docs/stack_queue_brackets/README.md)
 11. tree_breadth_first is [here](docs/tree_breadth_first/README.md)
 12. tree_fizz_buzz is [here](docs/tree_fizz_buzz/README.md)
+13. insertion_sort is [here](docs/insertion_sort/README.md)
 
